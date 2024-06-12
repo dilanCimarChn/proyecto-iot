@@ -1,0 +1,93 @@
+.contSensorLuz {
+  position: absolute;
+  width: 346px;
+  height: 329px;
+  gap: 0px;
+  background-color: rgba(37, 37, 37, 1);
+  /* background-color: rgb(107, 122, 134); */
+  border-radius: 10px;
+}
+
+/* EstiloInterruptor.css */
+
+.contenedor-interruptor {
+  width: 60px;
+  height: 34px;
+  position: relative;
+}
+
+/* .interruptor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+} */
+
+.interruptor input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.deslizador {
+  position: absolute;
+  /* right: 4px; x
+  bottom: 4px;
+  transition: 0.4s; */
+  background: linear-gradient(225deg, #edbaff 0%, #a1ffff 100%);
+
+  width: 34.88px;
+  height: 18px;
+  top: 29px;
+  left: 283px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  display: flex;
+}
+
+.interruptor input:checked + .deslizador {
+  background-color: rgba(37, 37, 37, 1);
+}
+
+.interruptor input:checked + .deslizador:before {
+  transform: translateX(20px);
+}
+
+.deslizador:before {
+  position: absolute;
+  content: "";
+  /* left: 4px; */
+  bottom: 4px;
+  background-color: black;
+  transition: 0.4s;
+  border-radius: 50%;
+  transform: translateX(5px);
+
+  width: 11.25px;
+  height: 11.25px;
+  opacity: 0px;
+}
+
+.activado {
+  /* background-color: #2196F3; */
+}
+
+.desactivado {
+  /* background-color: #ccc; */
+}
+
+.contDeslizador {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+}
+.nombreSensor {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
