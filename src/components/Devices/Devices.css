@@ -1,0 +1,29 @@
+/* src/components/Devices.css */
+.devices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los dispositivos */
+  }
+  
+  .device {
+    background-color: #151313;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .device-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .switch {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
