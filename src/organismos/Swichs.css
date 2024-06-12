@@ -1,0 +1,8 @@
+.devices-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000; /* Fondo negro */
+    padding: 20px;
+  }
+  

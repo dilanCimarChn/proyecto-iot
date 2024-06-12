@@ -1,0 +1,80 @@
+.device-card {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px; /* Ajusta según sea necesario */
+    margin: 10px; /* Espacio entre tarjetas */
+  }
+  
+  .device-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon-placeholder img {
+    width: 30px; /* Ajusta según sea necesario */
+    height: 30px; /* Ajusta según sea necesario */
+  }
+  
+  .switch {
+    position: relative;
+  }
+  
+  .switch-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch-label {
+    display: block;
+    width: 40px; /* Ajusta según sea necesario */
+    height: 20px; /* Ajusta según sea necesario */
+    background: #888; /* Color de fondo del switch */
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .switch-label::after {
+    content: "";
+    position: absolute;
+    width: 16px; /* Ajusta según sea necesario */
+    height: 16px; /* Ajusta según sea necesario */
+    border-radius: 50%;
+    background: #fff; /* Color del círculo */
+    top: 2px; /* Ajusta según sea necesario */
+    left: 2px; /* Ajusta según sea necesario */
+    transition: all 0.3s;
+  }
+  
+  .switch-input:checked + .switch-label {
+    background: #0af; /* Color de fondo del switch cuando está activado */
+  }
+  
+  .switch-input:checked + .switch-label::after {
+    transform: translateX(20px); /* Ajusta según sea necesario */
+  }
+  
+  .device-body {
+    margin-top: 20px;
+  }
+  
+  .device-info h1 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .device-info p {
+    font-size: 0.8em;
+    margin: 0;
+    color: #888; /* Color de texto gris */
+  }
+  
+  .device-switch p {
+    font-size: 0.9em;
+    color: #88f; /* Color de texto azul claro */
+  }
+  
