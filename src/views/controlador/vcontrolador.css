@@ -1,0 +1,18 @@
+/* src/components/vcontrolador.css */
+.main-layout {
+    display: flex;
+    min-height: 100vh; /* Asegura que el layout ocupe la altura completa de la pantalla */
+}
+
+.sidebar {
+    width: 250px; /* O el ancho que prefieras para tu barra lateral */
+    
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+ 
+}
+
+/* Estilos adicionales para los componentes Devices y NewDevices si es necesario */
