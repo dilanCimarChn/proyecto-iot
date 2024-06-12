@@ -9,7 +9,7 @@ const DeslizadorUnico = () => {
   };
 
   return (
-    <div className="contenedorDeslizadorUnico">
+    <div className="contenedorDeslizador">
       <input
         type="range"
         min="0"
@@ -19,7 +19,7 @@ const DeslizadorUnico = () => {
         id="miDeslizadorUnico"
         onChange={cambiarValorUnico}
       />
-      <label htmlFor="miDeslizadorUnico" className="etiquetaDeslizadorUnico">{`${valorUnico}%`}</label>
+      <label htmlFor="miDeslizadorUnico" className="etiquetaDeslizador">{`${valorUnico}%`}</label>
     </div>
   );
 };

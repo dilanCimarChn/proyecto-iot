@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sensorLuz.css";
 import Deslizador from "./deslizador/deslizador";
 
-export const SensorLuz = ({ nombreSensor }) => {
+export const SensorLuz = ({ nombreSensor, descripcion }) => {
   const [estaActivado, setEstaActivado] = useState(false);
 
   const cambiarEstado = () => {
@@ -25,6 +25,9 @@ export const SensorLuz = ({ nombreSensor }) => {
             onChange={cambiarEstado}
           />
         </span>
+        <label className="descripcion">
+          {descripcion}
+        </label>
       </label>
       <div className="contDeslizador">
         <Deslizador />  

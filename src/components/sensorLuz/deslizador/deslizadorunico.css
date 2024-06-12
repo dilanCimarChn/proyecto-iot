@@ -1,0 +1,13 @@
+.deslizadorUnico {
+  background: linear-gradient(225deg, #edbaff 0%, #a1ffff 100%);
+  width: 300px;
+  position: absolute;
+  left: -65px;
+}
+.etiquetaDeslizador {
+  position: absolute;
+  top: -80px;
+  left: 40px;
+  font-size: 40px;
+  background-color: linear-gradient(225deg, #edbaff 0%, #a1ffff 100%);
+}
